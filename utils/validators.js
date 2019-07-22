@@ -28,7 +28,7 @@ module.exports.validateRegisterInput = (
   }
 };
 
-module.exports.validateLoginInput = async (username, password) => {
+module.exports.validateLoginInput = (username, password) => {
   const errors = {};
   if(username.trim() === '') {
     errors.username = 'Please enter your username';
