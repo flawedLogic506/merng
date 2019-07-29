@@ -58,7 +58,7 @@ module.exports = {
       // Hash password
       password = await bcrypt.hash(password, 12);
       
-      // Username validation
+      // Unique username validation
       const user = await User.findOne({username});
       if(user) {
         throw new UserInputError('Username is taken', {

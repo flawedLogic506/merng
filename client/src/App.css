@@ -1,3 +1,8 @@
 .ui.secondary.pointing.menu {
   padding: 0 8rem;
 }
+
+.form-container {
+  width: 70%;
+  margin: 0 auto;
+}
